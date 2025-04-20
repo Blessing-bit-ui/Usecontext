@@ -4,7 +4,7 @@ import { useContext } from 'react'
 function MealList(){
     const meals = useContext( MealContext);
     return(
-        <div>
+        <div className="List">
             <h1> The Menu</h1>
             <ul>
                 {meals.map((meal, index)=>(
