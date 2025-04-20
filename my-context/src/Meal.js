@@ -1,4 +1,12 @@
 import { createContext } from 'react';
-const MealContext =createContext(["Cake", "Rice", "Soup"])
+ export const MealContext =createContext(["Cake", "Rice", "Soup"])
 
-c
+const Meal=({children})=>{
+    return(
+        <MealContext.Provider value={["Cake", "Rice", "Soup"]}>
+            {children}
+        </MealContext.Provider>
+    )
+}
+
+export default Meal;
